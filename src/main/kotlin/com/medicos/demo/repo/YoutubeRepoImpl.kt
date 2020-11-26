@@ -6,9 +6,11 @@ import com.medicos.demo.entity.Youtube
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.jdbc.core.BatchPreparedStatementSetter
 import org.springframework.jdbc.core.JdbcTemplate
+import org.springframework.stereotype.Repository
 import java.sql.PreparedStatement
 import java.sql.SQLException
 
+@Repository
 class YoutubeRepoImpl : YoutubeRepo {
     @Autowired
     private val jdbcTemplate: JdbcTemplate? = null
